@@ -9,10 +9,10 @@ load_dotenv(resolve_from_project_root(".env"))
 
 
 class Config:
-    """PetKG 宠物知识图谱项目配置（LLM 复用 FinRAG 的 OpenAI 兼容配置）"""
+    """PetKG 宠物知识图谱项目配置。"""
 
     def __init__(self):
-        # 大模型（沿用 FinRAG 的 DeepSeek/OpenAI 兼容配置）
+        # 大模型（OpenAI 兼容接口，可接入 DeepSeek 等服务）
         self.LLM_MODEL = os.getenv("LLM_MODEL")
         self.LLM_API_KEY = os.getenv("LLM_API_KEY")
         self.LLM_BASE_URL = os.getenv("LLM_BASE_URL")

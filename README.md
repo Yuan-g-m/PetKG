@@ -1,22 +1,51 @@
-# 宠知通 · 宠物知识图谱探索平台
+# 宠知通 · PetKG 宠物知识图谱智能平台
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/streamlit-1.0%2B-red.svg)](https://streamlit.io)
-[![Neo4j](https://img.shields.io/badge/neo4j-5.0%2B-green.svg)](https://neo4j.com)
+[![LangGraph](https://img.shields.io/badge/langgraph-1.0%2B-orange.svg)](https://www.langchain.com/langgraph)
+[![Neo4j](https://img.shields.io/badge/neo4j-4.4%2F5.x-green.svg)](https://neo4j.com)
+[![FAISS](https://img.shields.io/badge/faiss-1.13%2B-purple.svg)](https://github.com/facebookresearch/faiss)
+[![FastAPI](https://img.shields.io/badge/fastapi-0.115%2B-009688.svg)](https://fastapi.tiangolo.com)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.58%2B-red.svg)](https://streamlit.io)
 
-一个以知识图谱为核心的宠物养护探索平台，集成了宠物食品和食谱数据采集、实体关系抽取、图数据库构建以及图谱智能探索功能。
+> **PetKG 是一套面向宠物养护场景的知识图谱 + 多智能体 LLM 应用**，覆盖「数据采集 → 实体关系抽取 → 图谱构建 → 语义向量索引 → 多智能体检索与生成 → Web 交互 / 小红书图文创作」的完整闭环。项目将宠物食品、宠物食谱等非结构化文本沉淀为可查询、可推理、可解释的知识网络，并以图增强检索（Graph-enhanced Retrieval）支撑专业问答。
 
-> 本项目由「中医知识图谱」整体换皮而来：领域标记由 `TCM` 改为 `PET`，核心实体由中药/方剂映射为宠物食品/宠物食谱，依赖复用 FinRAG，中间件改为项目内自带的本地 Neo4j 4.4 与 JDK 11，可一键启动。
+## ✨ 核心亮点
+
+- **全链路知识工程**：从公开数据爬取、LLM 结构化抽取、Neo4j 建图到语义索引，形成标准化的领域知识生产流水线。
+- **图增强问答**：结合 Neo4j Cypher 精确查询与 FAISS 向量相似度召回，兼顾事实准确性与语义泛化能力。
+- **LangGraph 多智能体编排**：通过显式状态图串联意图识别、实体消歧、图谱检索、答案融合等多个专业 Agent，推理路径清晰可追踪。
+- **流式响应与多轮记忆**：FastAPI 提供 SSE/纯文本流式输出，前端支持会话历史注入与多轮追问。
+- **业务场景延伸**：在知识问答之外内置小红书宠物图文生成链路，可输出标题、正文与配图，保留内容创作扩展能力。
+
+## 🧭 技术架构
+
+```mermaid
+flowchart LR
+    A[宠物百科 / 数据源] --> B[Requests + BeautifulSoup 采集]
+    B --> C[LLM 实体与关系抽取]
+    C --> D[Neo4j 知识图谱]
+    C --> E[Sentence-Transformers 向量化]
+    E --> F[FAISS 语义索引]
+    D --> G[LangGraph 多智能体编排]
+    F --> G
+    G --> H[OpenAI 兼容 LLM 流式生成]
+    H --> I[FastAPI 服务层]
+    I --> J[Streamlit 交互界面]
+    I --> K[小红书图文生成]
+```
+
+系统采用 **领域数据层 → 知识表示层 → 检索推理层 → 服务交互层** 的分层设计：底层用 Neo4j 表达实体关系语义，中层用 FAISS 补齐向量召回，上层用 LangGraph 对多个 Agent 做条件路由与状态管理。
 
 ## 📋 项目简介
 
-本项目旨在构建一个完整的宠物知识图谱，并围绕图谱提供可视化探索与智能检索。系统主要包含以下功能：
+本项目以宠物食品和宠物食谱为初始知识域，构建完整的宠物知识图谱，并围绕图谱提供智能检索、专业问答与内容创作能力：
 
-- 🕷️ **数据采集**：自动爬取宠物百科网站的宠物食品和食谱信息
-- 🧠 **实体抽取**：基于大语言模型提取宠物食品和食谱的结构化实体信息
-- 📊 **知识图谱构建**：将结构化数据导入 Neo4j 图数据库
-- 🤖 **图谱智能探索**：基于 LangGraph 多代理系统的图谱实体识别与检索
-- 💻 **Web 界面**：基于 Streamlit 的用户友好界面
+- 🕷️ **数据采集**：自动爬取宠物食品与食谱的列表、详情和结构化字段
+- 🧠 **实体抽取**：基于 LLM 提取实体属性及疾病、症状、功效等关系
+- 📊 **图谱构建**：将结构化知识写入 Neo4j，形成多类型节点与关系网络
+- 🔍 **语义检索**：Sentence-Transformers + FAISS 对疾病、症状、功效实体建立向量索引
+- 🤖 **多智能体推理**：LangGraph 路由意图，动态选择 Cypher 查询或 LLM 直接回答
+- 💻 **服务与交互**：FastAPI 提供流式 API，Streamlit 提供多轮对话与图文生成界面
 
 ## 🏗️ 项目架构
 
@@ -77,8 +106,8 @@ PetKG/
 │   ├── 宠物食品列表.xlsx / .csv
 │   └── 宠物食谱列表.xlsx / .csv
 ├── main.py                                 # 主程序入口（启动 Streamlit）
-├── requirements.txt                        # 依赖（复用 FinRAG + 补充）
-├── docker-compose.yml                      # 中间件（复用 FinRAG + Neo4j）
+├── requirements.txt                        # 核心 Python 依赖
+├── docker-compose.yml                      # Neo4j 与向量检索中间件
 ├── config.ini.example
 ├── .env.example
 └── .gitignore
@@ -114,7 +143,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\start.ps1
 
 ### 启动项说明
 
-- Python 环境：优先读取 `PETKG_PYTHON`；未设置时兼容本机 `D:\agentFinal\FinRAG\Miniconda3\envs\PetKG`
+- Python 环境：优先读取 `PETKG_PYTHON`；未设置时读取本地忽略文件 `runtime\python-path.txt`，最后回退到系统 `python`
 - Neo4j：`runtime\neo4j-community-4.4.41`
 - JDK：`runtime\jdk-11.0.32.1+1`
 - FastAPI：`http://127.0.0.1:8000`
@@ -186,12 +215,17 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\start.ps1
 
 ## 🔧 技术栈
 
-- **后端框架**：LangChain, LangGraph
-- **数据库**：Neo4j
-- **前端界面**：Streamlit
-- **数据处理**：Pandas, BeautifulSoup
-- **向量检索**：FAISS
-- **AI 模型**：DeepSeek / OpenAI 兼容 LLM
+| 层级 | 核心技术 | 项目中的作用 |
+| --- | --- | --- |
+| 数据采集 | `Requests` + `BeautifulSoup` | 爬取宠物食品、食谱列表与详情，并持久化为 CSV/XLSX/文本 |
+| 数据处理 | `Pandas` / `openpyxl` | 清洗、合并与校验抽取结果，产出结构化知识表 |
+| 大模型 | `LangChain Core` + `langchain-openai` | 接入 OpenAI 兼容 LLM，完成实体抽取、意图识别与流式生成 |
+| 智能体编排 | `LangGraph` | 以状态图组织多 Agent，实现条件路由、上下文传递与可观测推理链路 |
+| 图数据库 | `Neo4j` | 存储多类型实体与关系，支持 Cypher 精确查询和图谱推理 |
+| 语义检索 | `Sentence-Transformers` + `FAISS` | 对疾病、症状、功效等实体构建向量索引，支撑语义消歧与召回 |
+| 服务层 | `FastAPI` + `Uvicorn` | 提供同步、流式与小图文生成 API，采用 Pydantic 模型校验 |
+| 交互层 | `Streamlit` | 构建多轮对话、历史会话管理与小红书内容创作界面 |
+| 内容发布 | `Playwright` + `volcengine` | 浏览器自动化发布与即梦文生图配图生成（可选模块） |
 
 ## ⚠️ 免责声明
 

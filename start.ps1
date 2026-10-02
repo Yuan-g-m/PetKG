@@ -4,9 +4,18 @@ $ErrorActionPreference = 'Stop'
 $ProjectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location -LiteralPath $ProjectRoot
 
+$PythonPathFile = Join-Path $ProjectRoot 'runtime\python-path.txt'
+$ConfiguredPython = $null
+if ($env:PETKG_PYTHON -and (Test-Path -LiteralPath $env:PETKG_PYTHON)) {
+    $ConfiguredPython = $env:PETKG_PYTHON
+}
+elseif (Test-Path -LiteralPath $PythonPathFile) {
+    $ConfiguredPython = (Get-Content -LiteralPath $PythonPathFile -TotalCount 1 | Select-Object -First 1).Trim()
+}
+
 $PythonCandidates = @(
-    $env:PETKG_PYTHON,
-    'D:\agentFinal\FinRAG\Miniconda3\envs\PetKG\python.exe'
+    $ConfiguredPython,
+    (Join-Path $ProjectRoot 'runtime\python\python.exe')
 )
 $Python = $null
 foreach ($Candidate in $PythonCandidates) {

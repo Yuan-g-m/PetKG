@@ -8,7 +8,7 @@ from common.config import Config
 
 conf = Config()
 
-# 配置大模型（沿用 FinRAG 的 OpenAI 兼容接口）
+# 配置大模型（OpenAI 兼容接口）
 my_llm = ChatOpenAI(
     api_key=conf.LLM_API_KEY,
     base_url=conf.LLM_BASE_URL,
