@@ -1,0 +1,17 @@
+# 复制本文件为 config.ini，并替换为自己的配置。
+
+[neo4j]
+uri = bolt://localhost:7687
+user = neo4j
+password = change_me
+
+[llm]
+model = deepseek-chat
+api_key = change_me
+base_url = https://api.deepseek.com
+
+[app]
+app_name = 宠知通·宠物知识图谱探索平台
+tagline = 以图谱为核心，探索宠物食品、食谱、疾病、症状与功效之间的知识网络
+valid_sources = ["宠物食品", "宠物食谱", "宠物疾病", "宠物症状"]
+customer_service_phone = 400-800-8899

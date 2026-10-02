@@ -1,0 +1,28 @@
+# Local secrets and configuration
+.env
+config.ini
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Local runtime: Neo4j, JDK, logs and database files
+runtime/
+*.log
+logs/
+
+# User-generated chat history
+data/conversations.json
+
+# Generated images and browser cookies
+picture/
+cookie_dir/
+
+# IDE and OS files
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

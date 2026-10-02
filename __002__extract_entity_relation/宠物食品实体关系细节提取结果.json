@@ -1,0 +1,326 @@
+[
+  {
+    "name": "深海鱼油美毛膏",
+    "effects": [
+      "美毛亮肤",
+      "滋养皮肤",
+      "减少掉毛",
+      "增强皮肤屏障"
+    ],
+    "indications": [
+      {
+        "content": "毛发干枯",
+        "type": "症状"
+      },
+      {
+        "content": "掉毛严重",
+        "type": "症状"
+      },
+      {
+        "content": "皮肤干燥",
+        "type": "症状"
+      },
+      {
+        "content": "皮屑增多",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "犬",
+      "猫"
+    ],
+    "nutrition_types": [],
+    "life_stages": []
+  },
+  {
+    "name": "高蛋白鸡肉冻干",
+    "effects": [
+      "高蛋白补充",
+      "增强肌肉",
+      "低敏易消化"
+    ],
+    "indications": [
+      {
+        "content": "体质偏瘦",
+        "type": "症状"
+      },
+      {
+        "content": "运动量大",
+        "type": "症状"
+      },
+      {
+        "content": "训练奖励",
+        "type": "症状"
+      },
+      {
+        "content": "补充优质蛋白",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "犬",
+      "猫"
+    ],
+    "nutrition_types": [
+      "高蛋白"
+    ],
+    "life_stages": []
+  },
+  {
+    "name": "肠胃调理益生菌粉",
+    "effects": [
+      "调理肠胃",
+      "改善软便",
+      "缓解腹泻",
+      "增强肠道菌群平衡"
+    ],
+    "indications": [
+      {
+        "content": "软便",
+        "type": "症状"
+      },
+      {
+        "content": "腹泻",
+        "type": "症状"
+      },
+      {
+        "content": "便秘",
+        "type": "症状"
+      },
+      {
+        "content": "食欲不振",
+        "type": "症状"
+      },
+      {
+        "content": "换粮应激",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "犬",
+      "猫",
+      "兔"
+    ],
+    "nutrition_types": [
+      "益生菌"
+    ],
+    "life_stages": []
+  },
+  {
+    "name": "幼犬羊奶粉",
+    "effects": [
+      "补充营养",
+      "增强免疫",
+      "促进骨骼发育",
+      "辅助离乳"
+    ],
+    "indications": [
+      {
+        "content": "幼宠离乳期",
+        "type": "症状"
+      },
+      {
+        "content": "母宠产后补奶",
+        "type": "症状"
+      },
+      {
+        "content": "体弱宠物补充营养",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "犬",
+      "猫"
+    ],
+    "nutrition_types": [
+      "高钙",
+      "维生素",
+      "矿物质"
+    ],
+    "life_stages": [
+      "幼年期",
+      "孕期"
+    ]
+  },
+  {
+    "name": "低敏鸭肉无谷狗粮",
+    "effects": [
+      "低敏易消化",
+      "清热降火",
+      "美毛护肤",
+      "减轻泪痕"
+    ],
+    "indications": [
+      {
+        "content": "皮肤敏感",
+        "type": "症状"
+      },
+      {
+        "content": "泪痕重",
+        "type": "症状"
+      },
+      {
+        "content": "肠胃敏感",
+        "type": "症状"
+      },
+      {
+        "content": "食物过敏",
+        "type": "疾病"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "犬"
+    ],
+    "nutrition_types": [
+      "无谷"
+    ],
+    "life_stages": []
+  },
+  {
+    "name": "全价猫粮鸡肉配方",
+    "effects": [
+      "全面均衡营养",
+      "维护视力与心脏",
+      "增强免疫",
+      "美毛"
+    ],
+    "indications": [
+      {
+        "content": "成猫日常营养需求",
+        "type": "症状"
+      },
+      {
+        "content": "体重维持",
+        "type": "症状"
+      },
+      {
+        "content": "毛发光泽",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "猫"
+    ],
+    "nutrition_types": [
+      "维生素",
+      "矿物质"
+    ],
+    "life_stages": [
+      "成年期"
+    ]
+  },
+  {
+    "name": "猫用化毛膏",
+    "effects": [
+      "促进毛球排出",
+      "润滑肠道",
+      "预防毛球症"
+    ],
+    "indications": [
+      {
+        "content": "频繁干呕",
+        "type": "症状"
+      },
+      {
+        "content": "呕吐毛球",
+        "type": "症状"
+      },
+      {
+        "content": "食欲不振",
+        "type": "症状"
+      },
+      {
+        "content": "便秘（毛球堵塞引起）",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "猫"
+    ],
+    "nutrition_types": [
+      "高纤维",
+      "维生素"
+    ],
+    "life_stages": []
+  },
+  {
+    "name": "老年犬关节保健软糖",
+    "effects": [
+      "养护关节",
+      "缓解关节不适",
+      "促进软骨修复",
+      "增强骨骼"
+    ],
+    "indications": [
+      {
+        "content": "老年犬关节僵硬",
+        "type": "症状"
+      },
+      {
+        "content": "运动减少",
+        "type": "症状"
+      },
+      {
+        "content": "上下楼困难",
+        "type": "症状"
+      },
+      {
+        "content": "关节术后恢复",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "犬"
+    ],
+    "nutrition_types": [
+      "高钙",
+      "维生素",
+      "矿物质"
+    ],
+    "life_stages": [
+      "老年期"
+    ]
+  },
+  {
+    "name": "全价仓鼠粮",
+    "effects": [
+      "均衡营养",
+      "磨牙",
+      "促进肠道蠕动",
+      "保持毛发"
+    ],
+    "indications": [
+      {
+        "content": "仓鼠日常营养",
+        "type": "症状"
+      },
+      {
+        "content": "牙齿过长",
+        "type": "症状"
+      },
+      {
+        "content": "毛色暗淡",
+        "type": "症状"
+      }
+    ],
+    "relations": null,
+    "pet_types": [
+      "仓鼠"
+    ],
+    "nutrition_types": [
+      "高纤维",
+      "矿物质"
+    ],
+    "life_stages": [
+      "全阶段"
+    ]
+  }
+]

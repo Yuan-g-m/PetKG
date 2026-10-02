@@ -1,0 +1,440 @@
+{
+  "labels": [
+    {
+      "name": "PetRecipe",
+      "description": "",
+      "properties": [
+        {
+          "name": "alias",
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "description": ""
+        },
+        {
+          "name": "effect_category",
+          "description": ""
+        },
+        {
+          "name": "indication",
+          "description": ""
+        },
+        {
+          "name": "ingredients",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "recipe_category",
+          "description": ""
+        },
+        {
+          "name": "source",
+          "description": ""
+        },
+        {
+          "name": "std_source",
+          "description": ""
+        },
+        {
+          "name": "taboo",
+          "description": ""
+        },
+        {
+          "name": "usage",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "EffectCategory",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "PetRecipeCategory",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Source",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "PetFood",
+      "description": "",
+      "properties": [
+        {
+          "name": "alias",
+          "description": ""
+        },
+        {
+          "name": "brand",
+          "description": ""
+        },
+        {
+          "name": "effect",
+          "description": ""
+        },
+        {
+          "name": "effect_category",
+          "description": ""
+        },
+        {
+          "name": "feeding",
+          "description": ""
+        },
+        {
+          "name": "food_category",
+          "description": ""
+        },
+        {
+          "name": "indication",
+          "description": ""
+        },
+        {
+          "name": "main_ingredient",
+          "description": ""
+        },
+        {
+          "name": "name",
+          "description": ""
+        },
+        {
+          "name": "origin",
+          "description": ""
+        },
+        {
+          "name": "processing",
+          "description": ""
+        },
+        {
+          "name": "suitable_pet",
+          "description": ""
+        },
+        {
+          "name": "taboo",
+          "description": ""
+        },
+        {
+          "name": "traits",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "PetFoodCategory",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Effect",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Symptom",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Disease",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "PetType",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "NutritionType",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "LifeStage",
+      "description": "",
+      "properties": [
+        {
+          "name": "name",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "ALLEVIATES_SYMPTOM",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "HAS_EFFECT",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "HAS_INGREDIENT",
+      "description": "",
+      "properties": [
+        {
+          "name": "amount",
+          "description": ""
+        },
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "FROM_SOURCE",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "BELONGS_TO_EFFECT_CATEGORY",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "BELONGS_TO_FOOD_CATEGORY",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "BELONGS_TO",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "TREATS_DISEASE",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "SUITS_PET_TYPE",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "HAS_NUTRITION",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "SUITS_LIFE_STAGE",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "HAS_SYMPTOM",
+      "description": "",
+      "properties": [
+        {
+          "name": "project",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "triples": [
+    {
+      "from": "PetRecipe",
+      "rel_type": "ALLEVIATES_SYMPTOM",
+      "to": "Symptom",
+      "description": ""
+    },
+    {
+      "from": "PetRecipe",
+      "rel_type": "HAS_EFFECT",
+      "to": "Effect",
+      "description": ""
+    },
+    {
+      "from": "PetRecipe",
+      "rel_type": "HAS_INGREDIENT",
+      "to": "PetFood",
+      "description": ""
+    },
+    {
+      "from": "PetRecipe",
+      "rel_type": "FROM_SOURCE",
+      "to": "Source",
+      "description": ""
+    },
+    {
+      "from": "PetRecipe",
+      "rel_type": "BELONGS_TO_EFFECT_CATEGORY",
+      "to": "EffectCategory",
+      "description": ""
+    },
+    {
+      "from": "EffectCategory",
+      "rel_type": "BELONGS_TO_FOOD_CATEGORY",
+      "to": "PetFoodCategory",
+      "description": ""
+    },
+    {
+      "from": "EffectCategory",
+      "rel_type": "BELONGS_TO",
+      "to": "PetRecipeCategory",
+      "description": ""
+    },
+    {
+      "from": "PetRecipe",
+      "rel_type": "TREATS_DISEASE",
+      "to": "Disease",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "ALLEVIATES_SYMPTOM",
+      "to": "Symptom",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "HAS_EFFECT",
+      "to": "Effect",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "SUITS_PET_TYPE",
+      "to": "PetType",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "BELONGS_TO_EFFECT_CATEGORY",
+      "to": "EffectCategory",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "HAS_NUTRITION",
+      "to": "NutritionType",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "SUITS_LIFE_STAGE",
+      "to": "LifeStage",
+      "description": ""
+    },
+    {
+      "from": "PetFood",
+      "rel_type": "TREATS_DISEASE",
+      "to": "Disease",
+      "description": ""
+    },
+    {
+      "from": "Disease",
+      "rel_type": "HAS_SYMPTOM",
+      "to": "Symptom",
+      "description": ""
+    }
+  ]
+}

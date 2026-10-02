@@ -1,0 +1,279 @@
+[
+  {
+    "name": "三文鱼美毛餐",
+    "effects": [
+      "美毛亮肤",
+      "补充Omega-3",
+      "增强皮肤屏障"
+    ],
+    "indications": [
+      {
+        "content": "毛发干枯",
+        "type": "症状"
+      },
+      {
+        "content": "掉毛",
+        "type": "症状"
+      },
+      {
+        "content": "皮肤干燥",
+        "type": "症状"
+      },
+      {
+        "content": "皮屑增多",
+        "type": "症状"
+      }
+    ],
+    "ingredients": [
+      {
+        "food": "三文鱼",
+        "amount": "100克"
+      },
+      {
+        "food": "西兰花",
+        "amount": "30克"
+      },
+      {
+        "food": "胡萝卜",
+        "amount": "20克"
+      },
+      {
+        "food": "燕麦",
+        "amount": "15克"
+      }
+    ],
+    "relations": null
+  },
+  {
+    "name": "南瓜鸡肉肠胃调理餐",
+    "effects": [
+      "调理肠胃",
+      "缓解软便",
+      "补充易消化能量"
+    ],
+    "indications": [
+      {
+        "content": "软便",
+        "type": "症状"
+      },
+      {
+        "content": "腹泻恢复期",
+        "type": "疾病"
+      },
+      {
+        "content": "食欲不振",
+        "type": "症状"
+      },
+      {
+        "content": "换粮应激",
+        "type": "症状"
+      }
+    ],
+    "ingredients": [
+      {
+        "food": "鸡胸肉",
+        "amount": "80克"
+      },
+      {
+        "food": "南瓜",
+        "amount": "60克"
+      },
+      {
+        "food": "大米",
+        "amount": "30克"
+      },
+      {
+        "food": "胡萝卜",
+        "amount": "20克"
+      }
+    ],
+    "relations": null
+  },
+  {
+    "name": "牛肉补铁营养餐",
+    "effects": [
+      "补铁补血",
+      "增强体质",
+      "促进肌肉发育"
+    ],
+    "indications": [
+      {
+        "content": "贫血",
+        "type": "疾病"
+      },
+      {
+        "content": "体质虚弱",
+        "type": "症状"
+      },
+      {
+        "content": "术后恢复",
+        "type": "疾病"
+      },
+      {
+        "content": "运动量大的犬只",
+        "type": "症状"
+      }
+    ],
+    "ingredients": [
+      {
+        "food": "瘦牛肉",
+        "amount": "100克"
+      },
+      {
+        "food": "菠菜",
+        "amount": "20克"
+      },
+      {
+        "food": "红薯",
+        "amount": "30克"
+      },
+      {
+        "food": "鸡蛋黄",
+        "amount": "1个"
+      }
+    ],
+    "relations": null
+  },
+  {
+    "name": "猫用鱼肉护眼餐",
+    "effects": [
+      "补充牛磺酸",
+      "维护视力",
+      "保护心脏"
+    ],
+    "indications": [
+      {
+        "content": "视力下降",
+        "type": "症状"
+      },
+      {
+        "content": "毛色暗淡",
+        "type": "症状"
+      },
+      {
+        "content": "日常营养补充",
+        "type": "症状"
+      }
+    ],
+    "ingredients": [
+      {
+        "food": "鳕鱼",
+        "amount": "80克"
+      },
+      {
+        "food": "胡萝卜",
+        "amount": "30克"
+      },
+      {
+        "food": "南瓜",
+        "amount": "30克"
+      },
+      {
+        "food": "牛磺酸粉",
+        "amount": "0.5克"
+      }
+    ],
+    "relations": null
+  },
+  {
+    "name": "老年犬低脂鸡肉餐",
+    "effects": [
+      "低脂易消化",
+      "控制体重",
+      "呵护心血管"
+    ],
+    "indications": [
+      {
+        "content": "老年犬体重超标",
+        "type": "症状"
+      },
+      {
+        "content": "胰腺炎恢复期",
+        "type": "疾病"
+      },
+      {
+        "content": "肠胃负担重",
+        "type": "症状"
+      }
+    ],
+    "ingredients": [
+      {
+        "food": "去皮鸡胸肉",
+        "amount": "80克"
+      },
+      {
+        "food": "冬瓜",
+        "amount": "40克"
+      },
+      {
+        "food": "糙米",
+        "amount": "30克"
+      },
+      {
+        "food": "西兰花",
+        "amount": "20克"
+      }
+    ],
+    "relations": null
+  },
+  {
+    "name": "兔兔蔬果磨牙餐",
+    "effects": [
+      "补充膳食纤维",
+      "促进磨牙",
+      "调理肠道"
+    ],
+    "indications": [
+      {
+        "content": "兔牙过长",
+        "type": "症状"
+      },
+      {
+        "content": "肠道蠕动不足",
+        "type": "症状"
+      },
+      {
+        "content": "毛球（兔毛）蓄积",
+        "type": "症状"
+      }
+    ],
+    "ingredients": [
+      {
+        "food": "提摩西草",
+        "amount": "30克"
+      },
+      {
+        "food": "胡萝卜",
+        "amount": "20克"
+      },
+      {
+        "food": "苹果",
+        "amount": "10克"
+      },
+      {
+        "food": "苜蓿草",
+        "amount": "10克"
+      }
+    ],
+    "relations": [
+      {
+        "disease": "兔牙过长",
+        "symptoms": [
+          "兔牙过长"
+        ]
+      },
+      {
+        "disease": "肠道蠕动不足",
+        "symptoms": [
+          "肠道蠕动不足"
+        ]
+      },
+      {
+        "disease": "毛球（兔毛）蓄积",
+        "symptoms": [
+          "毛球（兔毛）蓄积"
+        ]
+      }
+    ]
+  }
+]
